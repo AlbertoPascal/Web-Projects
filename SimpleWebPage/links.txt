@@ -3,3 +3,4 @@ nav var: https://stackoverflow.com/questions/4832051/make-a-ul-tag-display-on-th
 https://stackoverflow.com/questions/36350948/removing-black-dots-from-li-and-ul
 https://stackoverflow.com/questions/34440526/putting-two-uls-next-to-each-other
 https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+https://stackoverflow.com/questions/19126436/floating-two-divs-to-right-next-to-each-other
