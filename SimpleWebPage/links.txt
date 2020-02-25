@@ -8,3 +8,5 @@ https://stackoverflow.com/questions/19126436/floating-two-divs-to-right-next-to-
 
 http protocol:
 https://es.ccm.net/contents/264-el-protocolo-http
+https://es.slideshare.net/NeftisLis/protocolo-http-15255942
+https://concepto.de/http/
