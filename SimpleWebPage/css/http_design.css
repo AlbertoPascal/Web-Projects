@@ -30,8 +30,15 @@ h1
     
     color:orange
 }
-h2{
-    text-align: center;
+.Tittle-text{
+  text-align: center;
+  font-size: 28px;
+}
+.materia{
+  text-align: center;
+  font-weight: bold;
+  font-size:20px;
+  color:navy;
 }
 .matricula{
     float:right;
@@ -41,12 +48,6 @@ h2{
     margin-right:25%;
     
 
-}
-.materia{
-    text-align: center;
-    font-weight: bold;
-    font-size:20px;
-    color:navy;
 }
 .nombre{
     float:left;
@@ -68,8 +69,8 @@ h2{
     display: inline-block;
     font-weight: bold;
     font-size:18px;
-    color:navy;
     margin-top: 10px;
+    color:navy;
 }
 .center {
     display: block;
