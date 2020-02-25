@@ -1,0 +1,40 @@
+.navbar {
+    background-color: brown;
+    overflow: hidden;
+  }
+  
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: lightcoral;
+    text-align: center;
+    padding: 14px 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 10px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+
+.nav-option{
+    float: right;
+    margin:0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    margin-right: 10px;
+}
+h1
+{
+    display:inline-block;
+    padding: 0px;
+    margin-left: 10px;
+    color:orange
+}

@@ -1,0 +1,5 @@
+Main page:
+nav var: https://stackoverflow.com/questions/4832051/make-a-ul-tag-display-on-the-same-line-as-text
+https://stackoverflow.com/questions/36350948/removing-black-dots-from-li-and-ul
+https://stackoverflow.com/questions/34440526/putting-two-uls-next-to-each-other
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
