@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8"> <!-- Tiene de característica que no se cierra-->
+        <meta charset="utf-8"> <!-- Tiene de caracter&iacute;stica que no se cierra-->
         <meta name= "author" content = "Alberto Pascal">
-        <!-- link rel="shortcut icon" href="https:tec.mx/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" /-->  <!-- opcion uno es con la liga nos robamos el íconito del tec-->
+        <!-- link rel="shortcut icon" href="https:tec.mx/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" /-->  <!-- opcion uno es con la liga nos robamos el &iacute;conito del tec-->
         <link rel="shortcut icon" href="images/favicon_0.ico" type="image/vnd.microsoft.icon" />
         <link rel="stylesheet" type="text/css" href="../css/http_design.css">
-        <title>Protocolo HTTP</title> <!-- Este es el título que sale en los tabs de la página-->
+        <title>Protocolo HTTP</title> <!-- Este es el t&iacute;tulo que sale en los tabs de la página-->
        
     </head>
     <body>
@@ -33,18 +33,57 @@
         
         <div class = "nbody">
             <div class = "Tittle-text">
-                <h2>¿Qué es el protocolo HTTP?</h2>
+                <h2>Conociendo el protocolo HTTP</h2>
+            </div>
+            <div class = "Tittle-text">
+                <h3>¿Qu&eacute; es el protocolo HTTP?</h3>
             </div>
             <div>
-                <p> hola yo soy la informaci&oacute;n</p>
+                <p class = "info-text"> Es el protocolo de transmisi&oacute;n de informaci&oacute;n de la World Wide Web. En otras palabras, http es el c&oacute;digo que nos permite establecer una conexi&oacute;n entre una computadora y otra de manera que puedan "hablar" un mismo idioma a la hora de comunicarse por la red. Mediante el uso de este protocolo, se busca una comunicaci&oacute;n entre servidores, clientes y proxies. Para lograr esto, se encarga de mediar las respuestas entre cliente y servidor en internet. El protocolo http establece las pautas a seguir, los m&eacute;todos de petici&oacute;n y, conforme avanza en sus versiones, es más permisible a incorporar nuevas peticiones o funcionalidades. </p>
+            </div>
+            <div class = "Tittle-text">
+                <h3>¿C&oacute;mo funciona?</h3>
+            </div>
+            
+            <div>
+                <p class = "info-text">Como se mencion&oacute; un poco anteriormente, http se basa en un esquema de petici&oacute;n-respuesta entre el servidor web y el “ usuario” o cliente que realiza la una solicitud. Con esta solicitud, se inicia una petici&oacute;n de intercambio de datos. Para entender mejor el funcionamiento, es necesario entender que un cliente puede ser algo tan sencillo como cualquiera de nosotros abriendo una página de nuestro explorador favorito.
+                    A la hora que se solicitamos acceder a una página web, le mandamos al servidor las instrucciones de la informaci&oacute;n que queremos ver. Por consiguiente, el servidor brinda una respuesta estructurada de una serie de metadatos que determinan la manera en que se va a iniciar, desarrollar y cerrar la transmisi&oacute;n de la informaci&oacute;n. A esto se le conoce como los m&eacute;todos de petici&oacute;n y son todos los comandos que se disparan cuando se buscan archivos que residen en un servidor.</br></br>
+                    Por otro lado, existe una versi&oacute;n ligeramente distinta de http conocida como https. HTTPS se define como HyperText Transfer Procotol Secure y es la versi&oacute;n segura del http. A diferencia de http, se basa en crear un canal cifrado a la hora de establecer la comunicaci&oacute;n con el servidor, lo que nos protege de la intervenci&oacute;n de terceros y de espionaje.
+                    Independientemente de si hablamos de http o https, puede resumirse a que la comunicaci&oacute;n se establece en dos etapas mayormente: el env&iacute;o de una solicitud http por parte del navegador y el procesamiento de la solicitud y env&iacute;o de respuesta.
+                    </p>
+                <img src="../images/comunication.gif" alt="server-client comunication http" class="center">
+            </div>
+            <div class = "Tittle-text">
+                <h3>Solicitud HTTP</h3>
             </div>
             <div>
+                <p class = "info-text">Una solicitud HTTP se puede definir como el conjunto de líneas que se envían por parte del navegador hacia un servidor con el fin de obtener una respuesta. Esta compuesta por: </p>
+                <ul>
+                     <li class = "info-text"><strong>Una l&iacute;nea de solicitud:</strong> Describe el tipo de documento solicitado, el método que se aplicará y la versión del protocolo utilizada. Por lo tanto, está formada por tres elementos que deben estar separados por un espacio: el método, la dirección URL y la versión del protocolo utilizada por el cliente </li>
+                     <li class = "info-text"><strong>Los campos del encabezado de solicitud:</strong>  Son un conjunto de líneas opcionales que nos dan información adicional sobre la solicitud .Estas líneas están formadas por un nombre que describe el tipo de encabezado, dos puntos (:) y el valor del encabezado.</li>
+                     <li class = "info-text"><strong>El cuerpo de la solicitud:</strong>  Son el conjunto de líneas opcionales que permiten enviar datos por un comando POST o GET al servidor. Debes estar separadas de las líneas anteriores por un espacio.</li>
+                </ul> 
+                <p class = "info-text">Por ejemplo: </p>
+                <img src="../images/ejemplo_request.PNG" alt="server-client comunication http" class="center">  
+            </div>
+            <div class = "Tittle-text">
+                <h3>Respuesta HTTP</h3>
+            </div>
+            <div>
+                <p class = "info-text">Una respuesta HTTP se puede definir como el conjunto de líneas que el servidor envía al navegador. Está constituida por:</p>
+                <ul>
+                     <li class = "info-text"><strong>Una línea de estado:</strong> Especifica la versión del protocolo y el estado de la solicitud que está siendo procesada. Eso lo hace mediante un texto explicativo y un código. La línea está compuesta por tres elementos: la versión del protocolo utilizada, el código de estado y el significado del código.</li>
+                     <li class = "info-text"><strong>Los campos del encabezado de respuesta:</strong>  Aportan información adicional sobre la respuesta y el servidor. Cada una de estas líneas está compuesta por un nombre que califica el tipo de encabezado, seguido por dos puntos (:) y por el valor del encabezado </li>
+                     <li class = "info-text"><strong>El cuerpo de la respuesta:</strong>  contiene el documento solicitado.</li>
+                </ul> 
+                <p class = "info-text">Por ejemplo: </p>
+                <img src="../images/ejemplo_response.PNG" alt="server-client comunication http" class="center">  
+            </div>
+            <div class = "Tittle-text">
                 <h3>References here (links por ahora)</h3>
-                <p> https://stackoverflow.com/questions/4832051/make-a-ul-tag-display-on-the-same-line-as-text</br>
-                    https://stackoverflow.com/questions/36350948/removing-black-dots-from-li-and-ul</br>
-                    https://stackoverflow.com/questions/34440526/putting-two-uls-next-to-each-other</br>
-                    https://www.w3schools.com/howto/howto_js_topnav_responsive.asp</br>
-                    https://stackoverflow.com/questions/19126436/floating-two-divs-to-right-next-to-each-other</p>
+                <p class = "ref-text"> https://es.ccm.net/contents/264-el-protocolo-http </br>
+                    https://es.slideshare.net/NeftisLis/protocolo-http-15255942 </br>
+                    https://concepto.de/http/</p>
             </div>
         </div>
         

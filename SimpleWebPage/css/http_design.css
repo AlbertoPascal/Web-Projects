@@ -32,7 +32,17 @@ h1
 }
 .Tittle-text{
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
+}
+.info-text{
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.ref-text{
+  text-align: left;
+  font-size: 14px;
+  font-family: cursive;
 }
 .materia{
   text-align: center;
@@ -70,7 +80,6 @@ h1
     font-weight: bold;
     font-size:18px;
     margin-top: 10px;
-    color:navy;
 }
 .center {
     display: block;
