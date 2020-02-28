@@ -3,7 +3,7 @@
     overflow: hidden;
   }
   
-
+  
   .navbar a {
     float: right;
     display: block;
@@ -21,34 +21,45 @@
     color: black;
   }
   
-h1
-{
+  h1
+  {
     display:inline-block;
     padding: 0px;
     margin-left: 30px;
     
     
     color:orange
-}
-h2{
-    text-align: center;
-}
-.matricula{
+  }
+  .Tittle-text{
+  text-align: center;
+  font-size: 24px;
+  }
+  .info-text{
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+  .ref-text{
+  text-align: left;
+  font-size: 14px;
+  font-family: cursive;
+  }
+  .materia{
+  text-align: center;
+  font-weight: bold;
+  font-size:20px;
+  color:navy;
+  }
+  .matricula{
     float:right;
     font-weight: bold;
     font-size: 18px;
     color:navy;
     margin-right:25%;
     
-
-}
-.materia{
-    text-align: center;
-    font-weight: bold;
-    font-size:20px;
-    color:navy;
-}
-.nombre{
+  
+  }
+  .nombre{
     float:left;
     font-weight: bold;
     font-size: 18px;
@@ -56,22 +67,21 @@ h2{
     color:navy;
     
     }
-.datos {
+  .datos {
     display:inline;
-}
-.nbody{
+  }
+  .nbody{
     display:initial;
-}
-.details{
+  }
+  .details{
     text-align: center; 
     width: 49%;
     display: inline-block;
     font-weight: bold;
     font-size:18px;
-    color:navy;
     margin-top: 10px;
-}
-.center {
+  }
+  .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
