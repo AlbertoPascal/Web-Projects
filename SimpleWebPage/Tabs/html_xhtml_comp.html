@@ -32,17 +32,163 @@
         </header>
         
         <div class = "nbody">
-            <div>
-                <h3>Information here</h3>
-                <p> hola yo soy la informaci&oacute;n</p>
+            <div class = "Tittle-text">
+                <h2>HTML y XHTML no son lo mismo</h2>
+            </div>
+            <div class = "Tittle-text">
+                <h3>¿Qu&eacute; diferencias hay entre HTML y XHTML?</h3>
             </div>
             <div>
+                <p class = "info-text"> A pesar de que sus nombres se parecen, HTML y XHTML tienen entre sí varias diferencias significativas. Para empezar, XHTML es una versión de HTML combinada con XML, por lo que puede tener reglas más estrictas. Para poder entender esto a más detalle, realizamos una comparación entre 20 de las características de ambos lenguajes. A continuación, la comparación sobre las principales características de HTML5 contra XHTML 1.1 y XHTML 2 respectivamente: </p>
+                <table>
+                    <tr>
+                        <th></th>
+                      <th>HTML5</th>
+                      <th>XHTML 1.1</th>
+                      <th>XHTML 2.O</th>
+                    </tr>
+                    <tr>
+                    <td>Definition</td>
+                      <td>Hypertext Markup Language
+                        </td>
+                      <td>Extensible Hypertext Markup Language
+                        </td>
+                      <td>General Purpose Markup Language</td>
+                    </tr>
+                    <tr>
+                        <td>Function</td>
+                      <td>Web pages</td>
+                      <td>Extended version of HTML. Based on XML. Web pages, applications and Documents</td>
+                      <td>Designed to represent documents</td>
+                    </tr>
+                    <tr>
+                    <td>Extension</td>
+                      <td>.html, .htm</td>
+                      <td>.xhtml, .xht, .xml, .html, .htm</td>
+                      <td>.xhtml, .xht, .xml, .html, .htm</td>
+                    </tr>
+                    <tr>
+                    <td>Origin</td>
+                      <td>Proposed by Tim Berners-Lee in 1987</td>
+                      <td>World Wide Web Consortium Recommendation in 2000</td>
+                      <td>Beta, 16 December 2010 by World Wide Web Consortium</td>
+                    </tr>
+                    <tr>
+                        <td>Syntax Rules</td>
+                      <td>Permissive. Errors are allowed</td>
+                      <td>Not Permissive</td>
+                      <td>Reusing most of XML rules it can. Not permissive</td>
+                    </tr>
+                    <tr>
+                        <td>Flexibility</td>
+                      <td>Html can only read html</td>
+                      <td>Can read xhtml, html and xml</td>
+                      <td>Design aims to be as inclusive as possible.xhtml, html and xml. (not in all browsers)</td>
+                    </tr>
+                    <tr>
+                        <td>Tag usage</td>
+                      <td>Tags are predefined</td>
+                      <td>Tags are predefined. Can still define new tags </td>
+                      <td>Both predefined and new. XML based and reused. Introduced the “section” element</td>
+                    </tr>
+                    <tr>
+                        <td>Nesting</td>
+                      <td>Doesn’t matter</td>
+                      <td>Must be done properly</td>
+                      <td>Must be done properly</td>
+                    </tr>
+                    <tr>
+                        <td>Allows louse elements (elements without tags)</td>
+                      <td>Yes</td>
+                      <td>No</td>
+                      <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Requires  document type definition</td>
+                      <td>Yes</td>
+                      <td>Yes</td>
+                      <td>Yes. Needs html as head and xml definition</td>
+                    </tr>
+                    <tr>
+                        <td>Styling document aid</td>
+                      <td>CSS</td>
+                      <td>CSS (XSLT not supported in most versions)</td>
+                      <td>CSS, XSLT</td>
+                    </tr>
+                    <tr>
+                        <td>Minimization</td>
+                      <td>Allowed</td>
+                      <td>Forbidden</td>
+                      <td>Forbidden</td>
+                    </tr>
+                    <tr>
+                        <td>Attributes</td>
+                        <td>May be empty</td>
+                        <td>Needs a value</td>
+                        <td>Needs a value</td>
+                    </tr>
+                    <tr>
+                        <td>White space preservation</td>
+                      <td>Yes</td>
+                      <td>Yes</td>
+                      <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Extended from</td>
+                      <td>SGML</td>
+                      <td>HTML, XML</td>
+                      <td>HTML4, XML, XHTML 1.O, XHTML 1.1</td>
+                    </tr>
+                    <tr>
+                        <td>Recognizes null</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Case Sensitive</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Versions</td>
+                      <td>HTML – 1991 </br>
+                        HTML 2.0 – 1995</br>
+                        HTML 3.2 – 1997</br>
+                        HTML 4.01 – 1999</br>
+                        HTML 5 - 2014
+                        </td>
+                      <td>XHTML 1.0 - 1998</br>
+                        XHTML 1.1 – 1999</br>
+                        XHTML 1.2 - 2002</br>
+                        XHTML 2
+                        </td>
+                      <td>XHTML 2 (2010, still in beta)</td>
+                    </tr>
+                    <tr>
+                        <td>Supports graphic content like videos</td>
+                      <td>Yes</td>
+                      <td>Yes</td>
+                      <td>Yes, images are treated like text and have long descriptions</td>
+                    </tr>
+                    <tr>
+                        <td>Nature</td>
+                      <td>Flexible framework requiring lenient HTML specific parser</td>
+                      <td>Restrictive subset of XML and needs to be parsed with standard XML parsers</td>
+                      <td>Restrictive subset of XML Can be parsed with most browsers</td>
+                    </tr>
+                  </table>
+            </div>
+            
+            <div class = "Tittle-text">
                 <h3>References here (links por ahora)</h3>
-                <p> https://stackoverflow.com/questions/4832051/make-a-ul-tag-display-on-the-same-line-as-text</br>
-                    https://stackoverflow.com/questions/36350948/removing-black-dots-from-li-and-ul</br>
-                    https://stackoverflow.com/questions/34440526/putting-two-uls-next-to-each-other</br>
-                    https://www.w3schools.com/howto/howto_js_topnav_responsive.asp</br>
-                    https://stackoverflow.com/questions/19126436/floating-two-divs-to-right-next-to-each-other</p>
+                <p class = "ref-text"> 
+                    https://www.w3schools.com/html/html_tables.asp </br>
+                    https://luisforgiariniblog.com/cual-diferencia-entre-html-html5/</br>
+                    https://www.w3.org/TR/2010/NOTE-xhtml2-20101216/introduction.html#s_intro_whatisxhtml2</br>
+                    http://www.sidar.org/recur/desdi/traduc/es/xhtml/xhtml11_es.html
+                    </p>
             </div>
         </div>
         

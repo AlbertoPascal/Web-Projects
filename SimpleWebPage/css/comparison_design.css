@@ -1,8 +1,8 @@
 .navbar {
-    background-color: brown;
-    overflow: hidden;
-  }
-  
+  background-color: brown;
+  overflow: hidden;
+}
+
 
 .navbar a {
   float: right;
@@ -20,56 +20,87 @@
   background-color: #ddd;
   color: black;
 }
-.materia{
-  text-align: center;
-  font-weight: bold;
-  font-size:20px;
-  color:navy;
-}
+
 h1
 {
-    display:inline-block;
-    padding: 0px;
-    margin-left: 30px;
-    
-    
-    color:orange
+  display:inline-block;
+  padding: 0px;
+  margin-left: 30px;
+  
+  
+  color:orange
+}
+.Tittle-text{
+text-align: center;
+font-size: 24px;
+}
+.info-text{
+text-align: justify;
+margin-left: 10%;
+margin-right: 10%;
+}
+.ref-text{
+text-align: left;
+font-size: 14px;
+font-family: cursive;
+}
+.materia{
+text-align: center;
+font-weight: bold;
+font-size:20px;
+color:navy;
 }
 .matricula{
-    float:right;
-    font-weight: bold;
-    font-size: 18px;
-    color:navy;
-    margin-right:25%;
-    
+  float:right;
+  font-weight: bold;
+  font-size: 18px;
+  color:navy;
+  margin-right:25%;
+  
 
 }
 .nombre{
-    float:left;
-    font-weight: bold;
-    font-size: 18px;
-    margin-left:25%;
-    color:navy;
-    
-    }
+  float:left;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left:25%;
+  color:navy;
+  
+  }
 .datos {
-    display:inline;
+  display:inline;
 }
 .nbody{
-    display:initial;
+  display:initial;
 }
 .details{
-    text-align: center; 
-    width: 49%;
-    display: inline-block;
-    font-weight: bold;
-    font-size:18px;
-    margin-top: 10px;
-    color:navy;
+  text-align: center; 
+  width: 49%;
+  display: inline-block;
+  font-weight: bold;
+  font-size:18px;
+  margin-top: 10px;
 }
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 24%;
+  margin-right:25%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

@@ -10,3 +10,8 @@ http protocol:
 https://es.ccm.net/contents/264-el-protocolo-http
 https://es.slideshare.net/NeftisLis/protocolo-http-15255942
 https://concepto.de/http/
+
+comparison:
+https://www.w3schools.com/html/html_tables.asp
+
+https://luisforgiariniblog.com/cual-diferencia-entre-html-html5/
