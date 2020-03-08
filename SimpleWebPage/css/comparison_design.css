@@ -88,7 +88,7 @@ color:navy;
   width: 50%;
 }
 table {
-  font-family: arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   border-collapse: collapse;
   width: 50%;
   text-align:center;
@@ -100,9 +100,18 @@ td, th {
   width:10%;
   margin-left: 24%;
   margin-right:25%;
+  font-family: 'Times New Roman', Times, serif;
   
 }
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+body{
+  width: 600px;
+  height: 800px;
+  font-family: 'Times New Roman', Times, serif;
+}
+header{
+  font-family: 'Times New Roman', Times, serif;
 }
