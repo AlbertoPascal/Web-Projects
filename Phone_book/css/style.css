@@ -18,7 +18,54 @@
   }
   .div-table-col {
     float: left; /* fix for  buggy browsers */
-    display: table-column;         
+    display: table-column;     
+    border:1px solid black;    
     width: 200px;         
     background-color: #ccc;  
+  }
+  .p-table{
+    margin:auto;
+    width:80%;
+    border: 1px solid blueviolet;     
+  }
+  .p-row{
+    margin:auto;
+    float:left;
+    border:1px solid black;    
+    width:100%;
+    text-align: center;
+  }
+  .p-row:nth-child(even){
+    background-color:  whitesmoke;
+}
+.p-row:nth-child(odd){
+    background-color: lightskyblue;
+}
+  .p-col{
+    
+    width:16.5%;
+    
+   float: left;
+    text-align: center;
+    word-wrap: break-word;
+   
+  }
+ body{
+     font-size: 14px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+  #table_header{
+      
+      font-size: 17px;
+      font-family:'Times New Roman', Times, serif;
+      color:white;
+      background-color: blue;
+      font-weight: bold;
+      font-style: italic;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
