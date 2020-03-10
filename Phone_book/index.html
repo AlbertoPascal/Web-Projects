@@ -6,96 +6,353 @@
     <link href="css/style.css" rel="stylesheet"> 
   </head> 
   <body> 
-    <div> 
-      <h1>Pascal's Phonebook</h1> 
-      <h2>Search For: </h2> 
-      <input type="email" id="email" name="email">
-      
-
+    <header>
+        <div class="navbar" >
+            <h1>Pascal's Phonebook</h1>
+        </div>
+        <hr>
+        <div>
+            <img src="images/tec_logo.jpg" alt="ITESM CSF" id="center-img">
+            <hr>
+            <div class = "materia">Desarrollo de Aplicaciones Web</div>
+            <div class = "details">Alberto Pascal</div>
+            <div class="details">A01023607</div>
+            <hr>
+        </div>
+    </header>
+    <div class = "center">  
+      <h1 class = "subtittle">Search For: </h1> 
+      <input type="email" id="email" name="email" placeholder="Write an e-mail here">
+      <button type="button" class = "btn-grad" name="search-btn" >Search</button>
+     
     </div> 
-
-    <div class = "p-table center">
-        <div class = "p-row" id = "table_header">
-            <div class = "p-col">
-                Nombre
+    <div class = "center">
+        <h1 class = "subtittle">Phonebook: </h1>
+        <div class = "p-table">
+            <div class = "p-row" id = "table_header">
+                <div class = "p-col">
+                    Forename
+                </div>
+                <div class = "p-col">
+                    First Surname
+                </div>
+                <div class = "p-col">
+                    Second Surname
+                </div>
+                <div class = "p-col">
+                    E-mail
+                </div>
+                <div class = "p-col">
+                    Picture
+                </div>
+                <div class = "p-col">
+                    Cellphone
+                </div>
             </div>
-            <div class = "p-col">
-                Apellido Paterno
+            <div class = "p-row">
+                <div class = "p-col">Kiona</div>
+                <div class = "p-col">Patrick</div>
+                <div class = "p-col">Ochoa</div>
+                <div class = "p-col">varius.et@faucibuslectusa.com</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16440930 4161</div>
             </div>
-            <div class = "p-col">
-                Apellido Materno
+            <div class = "p-row">
+                <div class = "p-col">Fritz</div>
+                <div class = "p-col">Slater</div>
+                <div class = "p-col">Sandoval</div>
+                <div class = "p-col">nunc.In@pedeetrisus.ca</div>
+                <div class = "p-col"><img src="images/photo.jpg" class = "table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16220224 1317</div>
             </div>
-            <div class = "p-col">
-                Correo
+            <div class = "p-row">
+                <div class = "p-col">Amos</div>
+                <div class = "p-col">Velez</div>
+                <div class = "p-col">Fleming</div>
+                <div class = "p-col">nisi.a@maurisSuspendissealiquet.org</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16260615 6756</div>
             </div>
-            <div class = "p-col">
-                Foto
+            <div class = "p-row">
+                <div class = "p-col">Tanisha</div>
+                <div class = "p-col">Hays</div>
+                <div class = "p-col">Cobb</div>
+                <div class = "p-col">pede@tempus.edu</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16631012 6591</div>
             </div>
-            <div class = "p-col">
-                Celular
+            <div class = "p-row">
+                <div class = "p-col">Malik</div>
+                <div class = "p-col">Summers</div>
+                <div class = "p-col">Newton</div>
+                <div class = "p-col">nec@disparturientmontes.org</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16061208 1299</div>
             </div>
-        </div>
-        <div class = "p-row odd_row">
-            <div class = "p-col">
-                okeyyeyeyeyeyeyeyeye dokey
+            <div class = "p-row">
+                <div class = "p-col">Natalie</div>
+                <div class = "p-col">Macdonald</div>
+                <div class = "p-col">Giles</div>
+                <div class = "p-col">posuere.enim.nisl@inconsequat.ca</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16900302 9999</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">David</div>
+                <div class = "p-col">Gaines</div>
+                <div class = "p-col">Franks</div>
+                <div class = "p-col">Etiam.imperdiet@Etiam.edu</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16061013 8570</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Quinlan</div>
+                <div class = "p-col">Walton</div>
+                <div class = "p-col">Schroeder</div>
+                <div class = "p-col">posuere.vulputate.lacus@necorci.com</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16990420 8189</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Uriel</div>
+                <div class = "p-col">Merritt</div>
+                <div class = "p-col">Cherry</div>
+                <div class = "p-col">venenatis.vel.faucibus@tinciduntorci.edu</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16640723 0199</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Shana</div>
+                <div class = "p-col">Joyner</div>
+                <div class = "p-col">Moss</div>
+                <div class = "p-col">lobortis@risusQuisquelibero.org</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16760822 2969</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Emma</div>
+                <div class = "p-col">Brown</div>
+                <div class = "p-col">Waters</div>
+                <div class = "p-col">Nunc.mauris.elit@luctus.com</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16551205 7844</div>
             </div>
-        </div>
-        <div class = "p-row even_row">
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Chastity</div>
+                <div class = "p-col">Pruitt</div>
+                <div class = "p-col">Mooney</div>
+                <div class = "p-col">ac.fermentum.vel@aliquetmetusurna.co.uk</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16030618 6685</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Ethan</div>
+                <div class = "p-col">Solomon</div>
+                <div class = "p-col">Park</div>
+                <div class = "p-col">eget.odio.Aliquam@commodo.edu</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16390808 9661</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Charlotte</div>
+                <div class = "p-col">Browning</div>
+                <div class = "p-col">Petty</div>
+                <div class = "p-col">faucibus@sedlibero.co.uk</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16340705 1881</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Hope</div>
+                <div class = "p-col">Berg</div>
+                <div class = "p-col">Yang</div>
+                <div class = "p-col">augue.Sed.molestie@sem.com</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16480626 7003</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Lance</div>
+                <div class = "p-col">Duffy</div>
+                <div class = "p-col">Nelson</div>
+                <div class = "p-col">ornare@euneque.ca</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16671211 2124</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Vernon</div>
+                <div class = "p-col">Mccray</div>
+                <div class = "p-col">Powell</div>
+                <div class = "p-col">lorem.auctor@arcuVestibulumante.co.uk</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16050416 3072</div>
             </div>
-        </div>
-        <div class = "p-row">
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Velma</div>
+                <div class = "p-col">Jennings</div>
+                <div class = "p-col">Booker</div>
+                <div class = "p-col">lobortis.quis.pede@parturientmontesnascetur.ca</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16590525 0683</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Bernard</div>
+                <div class = "p-col">Lamb</div>
+                <div class = "p-col">Roth</div>
+                <div class = "p-col">dolor.dolor.tempus@mollis.co.uk</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16390414 1185</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Hiroko</div>
+                <div class = "p-col">Bullock</div>
+                <div class = "p-col">Wiley</div>
+                <div class = "p-col">in.tempus.eu@sapien.com</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16291125 3108</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Hashim</div>
+                <div class = "p-col">Cross</div>
+                <div class = "p-col">Lynch</div>
+                <div class = "p-col">ac.turpis.egestas@adipiscingfringillaporttitor.co.uk</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16871225 9699</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Calvin</div>
+                <div class = "p-col">Cummings</div>
+                <div class = "p-col">English</div>
+                <div class = "p-col">ante@faucibusorciluctus.ca</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16810510 8446</div>
             </div>
-            <div class = "p-col">
-                okey dokey
+            <div class = "p-row">
+                <div class = "p-col">Tanek</div>
+                <div class = "p-col">Dennis</div>
+                <div class = "p-col">Moreno</div>
+                <div class = "p-col">magna.Cras.convallis@facilisisegetipsum.co.uk</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16791011 2908</div>
             </div>
-            
+            <div class = "p-row">
+                <div class = "p-col">Nolan</div>
+                <div class = "p-col">Greene</div>
+                <div class = "p-col">Eaton</div>
+                <div class = "p-col">a.nunc@interdum.ca</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16660901 9861</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Berk</div>
+                <div class = "p-col">Bell</div>
+                <div class = "p-col">Chang</div>
+                <div class = "p-col">turpis@lectus.com</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16770822 5789</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Clementine</div>
+                <div class = "p-col">Garrison</div>
+                <div class = "p-col">Holt</div>
+                <div class = "p-col">dui@volutpatNulla.com</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16011023 9696</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Victor</div>
+                <div class = "p-col">Barnett</div>
+                <div class = "p-col">Raymond</div>
+                <div class = "p-col">elementum@sed.net</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16760429 8427</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Derek</div>
+                <div class = "p-col">Lang</div>
+                <div class = "p-col">Garcia</div>
+                <div class = "p-col">sit.amet.risus@montes.org</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16330529 3957</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Natalie</div>
+                <div class = "p-col">Nichols</div>
+                <div class = "p-col">Todd</div>
+                <div class = "p-col">fermentum.vel@mattisornarelectus.co.uk</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16450924 6817</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Nissim</div>
+                <div class = "p-col">Carr</div>
+                <div class = "p-col">Hamilton</div>
+                <div class = "p-col">augue@molestieorci.ca</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16480306 4924</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Casey</div>
+                <div class = "p-col">Curry</div>
+                <div class = "p-col">Mason</div>
+                <div class = "p-col">ut.odio.vel@metuseuerat.ca</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16551221 8750</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Hilary</div>
+                <div class = "p-col">Freeman</div>
+                <div class = "p-col">Willis</div>
+                <div class = "p-col">pede@Vestibulumante.co.uk</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16600525 4690</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Ora</div>
+                <div class = "p-col">Goodman</div>
+                <div class = "p-col">Newman</div>
+                <div class = "p-col">et@faucibus.net</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16020407 7697</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Abdul</div>
+                <div class = "p-col">Farrell</div>
+                <div class = "p-col">Mccarty</div>
+                <div class = "p-col">est@ipsumleoelementum.com</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16890122 4546</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Charles</div>
+                <div class = "p-col">Joyner</div>
+                <div class = "p-col">Short</div>
+                <div class = "p-col">vehicula.aliquet.libero@etnetus.edu</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16851104 6545</div>
+            </div>
+            <div class = "p-row">
+                <div class = "p-col">Hadley</div>
+                <div class = "p-col">Grant</div>
+                <div class = "p-col">Lucas</div>
+                <div class = "p-col">malesuada.vel.venenatis@necdiamDuis.ca</div>
+                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
+                <div class = "p-col">16030809 1875</div>
+            </div>
         </div>
     </div>
+    
+    <div class = "center"> 
+        <div>
+            <hr>
+            <h1 class = "subtittle">Morse Code: </h1> 
+            <input type="text" id="text" name="morsecode" maxlength="10" placeholder="write a 10 char message here">
+            <button type="button" class = "btn-morse-black">Button1</button>
+            <button type="button" class = "btn-morse-yellow">Button2</button>
+            <hr>
+        </div>
+        <div>
+            <label for = "text"  class = "center" id = "morse"><span>Morse equivalent of text</span></label>
+        </div>
+  
+      </div> 
   </body> 
 </html>
