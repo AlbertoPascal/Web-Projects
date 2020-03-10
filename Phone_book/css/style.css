@@ -8,6 +8,8 @@
 }
 #text{
   border-radius: 10px;
+    color:black;
+    background-color: lightskyblue;
     width:40%;
     height:25px;
     text-align: center;
