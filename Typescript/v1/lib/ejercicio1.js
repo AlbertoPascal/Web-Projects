@@ -1,0 +1,16 @@
+var mensaje = "hola a todos desde casa";
+console.log(mensaje);
+var numero = 23;
+var verdader = true;
+var nulo;
+var indefinido;
+var num2 = 22;
+var resultado = numero + num2;
+console.log(resultado);
+var texto = document.getElementById("titulo1");
+console.log("Objeto: " + typeof (texto));
+texto.innerText = "hola";
+var a = 123;
+let b = ["saludos"];
+let c = a + b;
+console.log(c);
