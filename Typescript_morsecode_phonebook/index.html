@@ -1,151 +1,165 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  <head> 
-    <meta charset="UTF-8"> 
-    <title>Tarea 3: A01023607</title> 
-    <link href="css/style.css" rel="stylesheet"> 
-  </head> 
-  <body> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 3: A01023607</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
     <header>
-        <div class="navbar" >
+        <div class="navbar">
             <h1>Pascal's Phonebook</h1>
         </div>
         <hr>
         <div>
             <img src="images/tec_logo.jpg" alt="ITESM CSF" id="center-img">
             <hr>
-            <div class = "materia">Desarrollo de Aplicaciones Web</div>
-            <div class = "details">Alberto Pascal</div>
+            <div class="materia">Desarrollo de Aplicaciones Web</div>
+            <div class="details">Alberto Pascal</div>
             <div class="details">A01023607</div>
             <hr>
         </div>
     </header>
-    <div class = "center">  
-      <h1 class = "subtittle">Search For: </h1> 
-      <input type="email" id="email" name="email" placeholder="Write an e-mail here">
-      <button type="button" class = "btn-grad" name="search-btn" >Search</button>
-     
-    </div> 
-    <div class = "center">
-        <h1 class = "subtittle">Phonebook: </h1>
-        <div class = "p-table">
-            <div class = "p-row" id = "table_header">
-                <div class = "p-col">
+    <div class="center">
+        <h1 class="subtittle">Search For: </h1>
+        <input type="email" id="emailInput" name="email" placeholder="Write an e-mail here">
+        <button type="button" class="btn-grad" onclick="SearchContactEmail()" name="search-btn">Search Emails</button>
+        <input type="fname" id="nameInput" name="fname" placeholder="Write a forename here">
+        <button type="button" class="btn-grad" onclick="SearchContactName()" name="search-name-btn">Search
+            Names</button>
+
+    </div>
+    <div class="center">
+        <h1 class="subtittle">Phonebook: </h1>
+        <div class="p-table" id="p-table">
+            <div class="p-row" id="table_header">
+                <div class="p-col">
                     Forename
                 </div>
-                <div class = "p-col">
+                <div class="p-col">
                     First Surname
                 </div>
-                <div class = "p-col">
+                <div class="p-col">
                     Second Surname
                 </div>
-                <div class = "p-col">
+                <div class="p-col">
                     E-mail
                 </div>
-                <div class = "p-col">
+                <div class="p-col">
                     Picture
                 </div>
-                <div class = "p-col">
+                <div class="p-col">
                     Cellphone
                 </div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">Kiona</div>
-                <div class = "p-col">Patrick</div>
-                <div class = "p-col">Ochoa</div>
-                <div class = "p-col">kiona.patrick@live.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16440930 4161</div>
+            <div class="p-row">
+                <div class="p-col">Kiona</div>
+                <div class="p-col">Patrick</div>
+                <div class="p-col">Ochoa</div>
+                <div class="p-col">kiona.patrick@live.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16440930 4161</div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">Fritz</div>
-                <div class = "p-col">Slater</div>
-                <div class = "p-col">Sandoval</div>
-                <div class = "p-col">fritz_slater97@yahoo.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class = "table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16220224 1317</div>
+            <div class="p-row">
+                <div class="p-col">Fritz</div>
+                <div class="p-col">Slater</div>
+                <div class="p-col">Sandoval</div>
+                <div class="p-col">fritz_slater97@yahoo.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16220224 1317</div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">Amos</div>
-                <div class = "p-col">Velez</div>
-                <div class = "p-col">Fleming</div>
-                <div class = "p-col">aveflem@gmail.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16260615 6756</div>
+            <div class="p-row">
+                <div class="p-col">Amos</div>
+                <div class="p-col">Velez</div>
+                <div class="p-col">Fleming</div>
+                <div class="p-col">aveflem@gmail.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16260615 6756</div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">Tanisha</div>
-                <div class = "p-col">Hays</div>
-                <div class = "p-col">Cobb</div>
-                <div class = "p-col">tanisha_hays@hotmail.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16631012 6591</div>
+            <div class="p-row">
+                <div class="p-col">Tanisha</div>
+                <div class="p-col">Hays</div>
+                <div class="p-col">Cobb</div>
+                <div class="p-col">tanisha_hays@hotmail.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16631012 6591</div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">Malik</div>
-                <div class = "p-col">Summers</div>
-                <div class = "p-col">Newton</div>
-                <div class = "p-col">malik_summers@live.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16061208 1299</div>
+            <div class="p-row">
+                <div class="p-col">Malik</div>
+                <div class="p-col">Summers</div>
+                <div class="p-col">Newton</div>
+                <div class="p-col">malik_summers@live.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16061208 1299</div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">Natalie</div>
-                <div class = "p-col">Macdonald</div>
-                <div class = "p-col">Giles</div>
-                <div class = "p-col">natymcdonald@gmail.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16900302 9999</div>
+            <div class="p-row">
+                <div class="p-col">Natalie</div>
+                <div class="p-col">Macdonald</div>
+                <div class="p-col">Giles</div>
+                <div class="p-col">natymcdonald@gmail.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16900302 9999</div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">David</div>
-                <div class = "p-col">Gaines</div>
-                <div class = "p-col">Franks</div>
-                <div class = "p-col">david.gaines@yahoo.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16061013 8570</div>
+            <div class="p-row">
+                <div class="p-col">David</div>
+                <div class="p-col">Gaines</div>
+                <div class="p-col">Franks</div>
+                <div class="p-col">david.gaines@yahoo.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16061013 8570</div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">Quinlan</div>
-                <div class = "p-col">Walton</div>
-                <div class = "p-col">Schroeder</div>
-                <div class = "p-col">quinlan_walton13@gmail.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16990420 8189</div>
+            <div class="p-row">
+                <div class="p-col">Quinlan</div>
+                <div class="p-col">Walton</div>
+                <div class="p-col">Schroeder</div>
+                <div class="p-col">quinlan_walton13@gmail.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16990420 8189</div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">Uriel</div>
-                <div class = "p-col">Merritt</div>
-                <div class = "p-col">Cherry</div>
-                <div class = "p-col">uri93.merrit@hotmail.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16640723 0199</div>
+            <div class="p-row">
+                <div class="p-col">Uriel</div>
+                <div class="p-col">Merritt</div>
+                <div class="p-col">Cherry</div>
+                <div class="p-col">uri93.merrit@hotmail.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16640723 0199</div>
             </div>
-            <div class = "p-row">
-                <div class = "p-col">Chastity</div>
-                <div class = "p-col">Pruitt</div>
-                <div class = "p-col">Mooney</div>
-                <div class = "p-col">im.chastity.pruitt@live.com</div>
-                <div class = "p-col"><img src="images/photo.jpg" class  ="table-pic" alt="Generic profile picture"></div>
-                <div class = "p-col">16030618 6685</div>
+            <div class="p-row">
+                <div class="p-col">Chastity</div>
+                <div class="p-col">Pruitt</div>
+                <div class="p-col">Mooney</div>
+                <div class="p-col">im.chastity.pruitt@live.com</div>
+                <div class="p-col"><img src="images/photo.jpg" class="table-pic" alt="Generic profile picture"></div>
+                <div class="p-col">16030618 6685</div>
             </div>
-            
+
         </div>
-    <div class = "center"> 
-        <div>
-            <hr>
-            <h1 class = "subtittle">Message in english: </h1> 
-            <input type="text" id="morse_text" name="morsecode" maxlength="10" placeholder="write a 10 char message here">
-            <button type="button" onclick="drawMorse()">Button1</button>
-            <hr>
+        <div class="center">
+            <div>
+                <hr>
+                <h1 class="subtittle">Message in english: </h1>
+                <input type="text" id="morse_text" name="morsecode" maxlength="10"
+                    placeholder="write a 10 char message here">
+                <button type="button" onclick="drawMorse()">Button1</button>
+                <hr>
+            </div>
+            <div>
+                <label for="text" class="center" id="morse"><span>Morse equivalent of text</span></label>
+                <input type="number" id="dot_time" placeholder="Time a dot stays on" min="0">
+                <input type="number" id="score_time" placeholder="Time a score stays on" min="0">
+                <input type="number" id="char_time" placeholder="Time between chars" min="0">
+                <input type="number" id="word_time" placeholder="Time between words" min="0">
+                <img id="Morse_bulb" class="center dark-bulb">
+                <!--button type="button" id = "Morse_bulb" class = "center btn-morse-yellow">Button2</button -->
+            </div>
         </div>
-        <div>
-            <label for = "text"  class = "center" id = "morse"><span>Morse equivalent of text</span></label>
-            <img id ="Morse_bulb"class = "center dark-bulb">
-            <!--button type="button" id = "Morse_bulb" class = "center btn-morse-yellow">Button2</button -->
-        </div>
-      </div> 
-  
-  </body> 
-  <script src="lib/ejercicio1.js"></script>
+        <script>
+
+        </script>
+</body>
+<script src="lib/morse.js"></script>
+<script src="lib/filter.js"></script>
+
 </html>

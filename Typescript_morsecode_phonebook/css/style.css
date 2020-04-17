@@ -40,6 +40,16 @@
   text-align: center;
 }
 
+.p-row-highlight {
+  display: table-row;
+  width: 100%;
+  clear: both;
+  margin: auto;
+  border: 1px solid black;
+  text-align: center;
+  background-color: yellow;
+}
+
 .p-col {
   float: left;
   /* fix for  buggy browsers */
