@@ -63,7 +63,7 @@ var morse_dictionary = {
     '"': '.-..-.',
     '$': '...-..-',
     '@': '.--.-.',
-    ' ': ' '
+    ' ': '/'
 };
 function drawMorse() {
     var new_text = "";
@@ -103,7 +103,7 @@ function Interpret_morse(morse_text_input, time_caller) {
                 if (curr_text == '-')
                     on_time = score_time;
                 rest_time = char_time;
-                if (curr_text == ' ')
+                if (curr_text == '/')
                     rest_time = word_time;
                 let bulb_promise = new Promise((resolve, reject) => {
                     setTimeout(() => {
